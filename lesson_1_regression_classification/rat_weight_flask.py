@@ -19,24 +19,31 @@ model.fit(x,y)
 parser = reqparse.RequestParser()
 parser.add_argument("week", type = int, required = True, help = "Age of the rat in weeks")
 
-# We create 
+# We create a Flask Resource which serves as an endpoint for the requests
 class RatWeight(Resource):
     def post(self):
+        # We first get the args
         args = parser.parse_args()
 
+        # We get the week and reshape it to feed it to our model
         week = args["week"]
         week = np.array(week).reshape(-1,1)
 
+        # We get our model prediction
         weight = model.predict(week)
 
+        # We return it
         output = f"Your rat at age {week} should weigh {weight}"
 
         return output
 
+# We create the Flask app and API
 app = Flask(__name__)
 api = Api(app)
 
+# We bind the endpoint
 api.add_resource(RatWeight, "/rat_weight")
 
+# We run the app
 if __name__ == "__main__":
     app.run()
