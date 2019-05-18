@@ -5,7 +5,7 @@ from flask_restplus import Resource, Api, reqparse
 from flask import Flask
 
 # First we load the data and train our model
-data = pd.read_csv("./data/ratWeight.csv")
+data = pd.read_csv("ratWeight.csv")
 rat = data.loc[data.id == "B38602"]
 
 x = data.week.values.reshape(-1,1)
