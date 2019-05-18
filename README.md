@@ -1,5 +1,5 @@
 # X-AI
-X-AI workshops 
+X-AI workshops by Daniel Huynh
 
 These lessons come in notebooks to introduce the basic ideas behind machine learning, from the pure maths to the code. Practice is put forward, and we will see how to code simple and complex algorithms with various libraries such as Sklearn, Pytorch, and how to share the results with plots and even a simple REST API with Flask.
 
