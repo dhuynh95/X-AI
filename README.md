@@ -8,7 +8,7 @@ These lessons come in notebooks to introduce the basic ideas behind machine lear
 We will introduce the most basics concept with the two most simple models : linear and logistic regressions, and see how we can code them from scratch using numpy. 
 Then we will see how it is done in Sklearn and deploy a Flask app on Azure.
 
-## Lesson 2 : Neural networks [TO DO]
+## Lesson 2 : Neural networks
 
 We will see the fundamentals of Neural Networks, and see how Pytorch handles most of the tedious stuff. We will code a simple Feed Forward NN, then a Convolutionnal NN on MNIST data. Then we will cover VAEs on MNIST, finally we will use Fastai framework to do transfer learning on a real world dataset.
 
