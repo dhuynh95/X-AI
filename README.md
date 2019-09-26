@@ -12,4 +12,6 @@ Then we will see how it is done in Sklearn and deploy a Flask app on Azure.
 
 We will see the fundamentals of Neural Networks, and see how Pytorch handles most of the tedious stuff. We will code a simple Feed Forward NN, then a Convolutionnal NN on MNIST data. Then we will cover VAEs on MNIST, finally we will use Fastai framework to do transfer learning on a real world dataset.
 
-## Lesson 3 : TBA
+## Lesson 3 : NLP and Pytorch intro
+
+We will see quickly how Pytorch works, and have a quick dive into NLP with Word2Vec.
